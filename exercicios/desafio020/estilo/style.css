@@ -1,2 +1,24 @@
 @charset "UTF-8";
 
+. {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: darkgray;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+    
+}
