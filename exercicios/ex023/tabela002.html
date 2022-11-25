@@ -10,44 +10,58 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:lightgray;
+        }
+
         table {
-            width: 300px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
-            padding: 8px;
+            padding: 10px;
 
         }
 
-        .popul {
+        td.popul {
             text-align: right;
         }
 
-        thead, tfoot {
+        thead {
             background-color: gray;
-            font-size: 1.5em;
+            color: white;
+            font-size: 1em;
            
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-last-child(2n) {
+            background-color: lightgray;
+        }
+
+       
         
-
-
-
-
-
-
-
     </style>
 </head>
 <body>
+    <h1>Uso de Tabelas Grandes</h1>
     <table>
         <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
